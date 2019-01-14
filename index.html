@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resourse page</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="informative.css">
+</head>
+<body>
+
+    <header class="clear-fix">
+      <h1 class="header-logo animated lightSpeedIn">Resources.org</h1>
+      <nav>
+        <ul>
+          <li><a href="#functions">functions</a></li>
+          <li><a href="#objects">objects</a></li>
+          <li><a href="#arrays">arrays</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="about">
+      <h1 class="about--heading">Welcome to resources.org.
+      <br/>
+      <span class="about--span">in resources.org we try our best to teach people the best technologies they need to build awesome web applications.</span></h1>
+    </section>
+
+    <div class="container">
+      <article class="side--show">
+        <h2 class="side--heading">other resources</h2>
+          <ul>
+            <li><a href="https://www.w3schools.com/" target="_blank">w3 schools</a></li>
+            <li><a href="https://stackoverflow.com/" target="_blank">Stack overflow</a></li>
+            <li><a href="https://www.traversymedia.com/" target="_blank">traversy media</a></li>
+            <li><a href="https://www.javascript.com/" target="_blank">javascript.com</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN web docks</a></li>
+            <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+            <li><a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp</a></li>
+            <li><a href="https://web.dev/" target="_blank">Web dev.com</a></li>
+            <li><a href="https://enboard.co/frontend/" target="_blank">Enboard.co</a></li>
+          </ul>
+      </article>
+
+      <section class="info">
+      <div class="functions"> 
+        <h1 class="functions--heading" id="functions">Functions</h1>
+        <p class="functions--para">
+            A function definition is a regular binding where the value of the binding is a function.
+            A function is created with an expression that starts with the keyword function. Functions have a set of parameters (in this case, only x) and a body, which contains the statements that are to be executed when the function is called. The function body of a function created this way must always be wrapped in braces, even when it consists of only a single statement. A function can have multiple parameters or no parameters at all. 
+            Each binding has a scope, which is the part of the program in which the binding is visible. For bindings defined outside of any function or block, the scope is the whole program—you can refer to such bindings wherever you want. These are called global. But bindings created for function parameters or declared inside a function can be referenced only in that function, so they are known as local bindings. Every time the function is called, new instances of these bindings are created. This provides some isolation between functions—each function call acts in its own little world (its local environment) and can often be understood without knowing a lot about what’s going on in the global environment. Bindings declared with let and const are in fact local to the block that they are declared in, so if you create one of those inside of a loop, the code before and after the loop cannot “see” it. In pre-2015 JavaScript, only functions created new scopes, so old-style bindings, created with the var keyword, are visible throughout the whole function that they appear in—or throughout the global scope, if they are not in a function.
+        </p>
+       </div> 
+
+      <div class="objects"> 
+        <h1 class="objects--heading" id="objects">Functions</h1>
+        <p class="objects--para">
+            Values of the type object are arbitrary collections of properties. One way to create an object is by using braces as an expression.
+            Inside the braces, there is a list of properties separated by commas. Each property has a name followed by a colon and a value. When an object is written over multiple lines, indenting it like in the example helps with readability. Properties whose names aren’t valid binding names or valid numbers have to be quoted. This means that braces have two meanings in JavaScript. At the start of a statement, they start a block of statements. In any other position, they describe an object. Fortunately, it is rarely useful to start a statement with an object in braces, so the ambiguity between these two is not much of a problem.
+            Reading a property that doesn’t exist will give you the value undefined. 
+            It is possible to assign a value to a property expression with the = operator. This will replace the property’s value if it already existed or create a new property on the object if it didn’t.     
+            To briefly return to our tentacle model of bindings—property bindings are similar. They grasp values, but other bindings and properties might be holding onto those same values. You may think of objects as octopuses with any number of tentacles, each of which has a name tattooed on it.     
+        </p>
+      </div>
+        
+
+      <div class="arrays"> 
+        <h1 class="array--heading" id="arrays">Functions</h1>
+        <p class="array--para">
+            Arrays, then, are just a kind of object specialized for storing sequences of things. If you evaluate typeof [], it produces "object". You can see them as long, flat octopuses with all their tentacles in a neat row, labeled with numbers. Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays.
+
+            Arrays cannot use strings as element indexes (as in an associative array) but must use integers. Setting or accessing via non-integers using bracket notation (or dot notation) will not set or retrieve an element from the array list itself, but will set or access a variable associated with that array's object property collection. The array's object properties and list of array elements are separate, and the array's traversal and mutation operations cannot be applied to these named properties.
+        </p>
+       </div> 
+      </section>
+      </div>
+      <footer class="footer clear-fix">
+        <p class="footer--para">
+           Resources.org <br>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-facebook"></i></a>
+        </p>
+      </footer>
+</body>
+</html>
